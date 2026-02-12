@@ -1,0 +1,118 @@
+@import url('./App.css');
+
+.gradient-text {
+  background: linear-gradient(to right, #036eff, #383dc8, #6b0797);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.advantages {
+  /* padding: 0 20px; */
+}
+
+/* xContenedor Principal */
+.joinEno {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* Espacio entre elementos */
+}
+
+/* Contenedor de Icono Principal */
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(/GradientImage.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 28px;
+  height: 400px;
+  width: 355px;
+  padding: 5px;
+  /* Espaciado interno */
+}
+
+/* Texto Principal */
+.heartText {
+  font-size: 25px;
+  text-align: center;
+  color: var(--main-color);
+  padding: 0 60px;
+}
+
+/* Contenedores de Iconos y Texto */
+.heartContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* Espacio entre icono y texto */
+  width: 95%;
+}
+
+.heartLeft {
+  background-color: var(--main-color);
+  border-radius: 32px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.heartLeft img {
+  width: 35px;
+}
+
+.heartCaption {
+  color: var(--heart-icon);
+}
+
+button.joinButton {
+  background-color: var(--main-color-mid);
+  border: none;
+  color: var(--heart-icon);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 14px 70px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.joinButton:hover {
+  background-color: var(--heart-icon);
+  color: var(--main-color);
+}
+
+.joinContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.membershipText {
+  text-align: center;
+  padding: 0 100px;
+}
+
+/* Clase que se aplica MIENTRAS el número está aumentando */
+.counter-animating {
+  filter: blur(4px);
+  opacity: 1;
+  transform: scale(1);
+  transition: filter 0s ease-out, transform 0.1s ease-out;
+}
+
+/* Clase que se aplica cuando el número llega a su fin */
+.counter-static {
+  filter: blur(0px);
+  opacity: 1;
+  transform: scale(1);
+  transition: filter 0.2s ease-in, transform 0.1s ease-in;
+}

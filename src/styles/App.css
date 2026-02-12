@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --heart-icon: #57348e;
+  --purple-text: #634fd9;
+  --purple-alt: #c400f6;
+  --gray-eno: #2c2c2d;
+  --blue-gradient: #ebebeb;
+  --main-color: #ffffff;
+  --main-bone: #f4f4f4;
+  --main-color-mid: #ffffff50;
+  --gradient-text: linear-gradient(to right, #012ce8, #57348e, #57348e);
+
+  /* text sizes */
+  --text-small: 16px;
+  --text-medium: 18px;
+  --text-large: 22px;
+  --text-xlarge: 36px;
+  --text-xxlarge: 45px;
+}
+
+/* Grotesk */
+
+@font-face {
+  font-family: 'Grotesk Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/FoundersGrotesk-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Grotesk Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/fonts/FoundersGrotesk-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Grotesk SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: url('/fonts/FoundersGrotesk-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Grotesk Bold';
+  font-weight: Bold;
+  font-style: normal;
+  src: url('/fonts/FoundersGrotesk-Bold.ttf');
+}
+
+/* Eucclid */
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  font-weight: 400;
+  /* Regular */
+  font-style: normal;
+  src: url('/fonts/EuclidCircularB-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  font-weight: 300;
+  /* Light */
+  font-style: normal;
+  src: url('/fonts/EuclidCircularB-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  font-weight: 500;
+  /* Medium */
+  font-style: normal;
+  src: url('/fonts/EuclidCircularB-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  font-weight: 600;
+  /* SemiBold */
+  font-style: normal;
+  src: url('/fonts/EuclidCircularB-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  font-weight: 700;
+  /* Bold */
+  font-style: normal;
+  src: url('/fonts/EuclidCircularB-Bold.ttf') format('truetype');
+}
+
+html {
+  font-family: custom;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #c400f6;
+  background: -webkit-radial-gradient(circle, #c500f65b 40%);
+  background: radial-gradient(circle, #9747ff7d 5%, #ae11d600 35%);
+  padding: 0;
+}
+
+.uniform-width {
+  max-width: 1200px;
+  /* Ajusta según sea necesario */
+  width: 100%;
+  padding: 0px;
+  /* Ajusta el padding según sea necesario */
+  box-sizing: border-box;
+}
+
+.gradient {
+  position: relative;
+  background: radial-gradient(circle at 80% 80%, #06ef0e00, transparent 1%),
+    radial-gradient(circle at 2% 15%, #b677d4, transparent 40%),
+    radial-gradient(circle at 65% 65%, #c631e1, transparent 29%),
+    radial-gradient(circle at 10% 100%, #0d0d0d, transparent 100%),
+    radial-gradient(circle at 100% 100%, #0d0d0d, transparent 100%);
+  background-size: 100% 200%;
+  animation: lava-motion 6s ease-in-out infinite;
+  overflow: hidden;
+  border-radius: 32px; /* Opcional: Bordes redondeados */
+}
+
+@keyframes lava-motion {
+  0% {
+    background-position: 30% 30%, 70% 70%;
+  }
+
+  25% {
+    background-position: 40% 20%, 60% 80%;
+  }
+
+  50% {
+    background-position: 50% 50%, 50% 50%;
+  }
+
+  75% {
+    background-position: 60% 40%, 40% 20%;
+  }
+
+  100% {
+    background-position: 30% 30%, 70% 70%;
+  }
+}
