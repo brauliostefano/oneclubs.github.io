@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed top-6 w-full z-50 px-4 flex justify-center">
+    <header className="lg:hidden fixed top-6 w-full z-50 px-4 flex justify-center">
       <nav
         className={`
                 relative transition-all duration-500 ease-in-out
