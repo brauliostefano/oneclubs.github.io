@@ -56,7 +56,7 @@ const Membership = () => {
         {/* inicio sección */}
         <section className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           {/* Primer contenedor - Izquierda */}
-          <div className="flex flex-col items-center justify-around gradient bg-cover bg-center bg-no-repeat rounded-[28px] h-[500px] w-full p-6 shadow-2xl border border-gray-800 relative overflow-hidden">
+          <div className="hidden sm:hidden lg:flex flex-col items-center justify-around gradient bg-cover bg-center bg-no-repeat rounded-[28px] h-[500px] w-full p-6 shadow-2xl border border-gray-800 relative overflow-hidden ">
             {/* Contenedor de Icono Modernizado */}
             <a
               href="#"
@@ -64,9 +64,11 @@ const Membership = () => {
                 e.preventDefault();
                 toggleFormVisibility();
               }}
-              className="z-10"
+              className="z-10 "
             >
-              <p className="text-white text-[28px] font-bold leading-tight tracking-tighter uppercase italic"></p>
+              <p className="text-white text-[28px] font-bold leading-tight tracking-tighter uppercase italic">
+                Join to the crew
+              </p>
             </a>
             {Array.from({ length: 5 }).map((_, i) => (
               <Plus key={i} />
@@ -74,7 +76,7 @@ const Membership = () => {
           </div>
 
           {/* Segundo contenedor - Centro */}
-          <div className="hidden lg:flex lg:flex-row lg:items-center lg:justify-center lg:space-x-8 max-w-7xl mx-auto p-8 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[28px] w-[720px] m-w-[720px] shadow-inner relative overflow-hidden ">
+          <div className="lg:flex lg:flex-row lg:items-center lg:justify-center lg:space-x-8 max-w-full lg:max-w-7xl mx-auto p-8 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[28px] w-[720px] m-w-[720px] shadow-inner relative overflow-hidden ">
             {/* Rayo de luz decorativo de fondo */}
             <div className="absolute -top-24 -left-24 w-48 h-48 bg-purple-600/20 blur-[100px]"></div>
 
@@ -93,7 +95,7 @@ const Membership = () => {
             </div>
 
             {/* Tercer contenedor - Derecha (Video) */}
-            <div className="hidden lg:flex items-center justify-center GradientRight relative ">
+            <div className="lg:flex flex items-center justify-center GradientRight relative mt-5">
               {/* Glow externo del video */}
               <div className="absolute -inset-2 bg-purple-500/30 rounded-2xl blur-xl opacity-40 animate-pulse"></div>
               <div className="relative rounded-xl overflow-hidden w-auto h-auto bg-black border border-white/20 shadow-2xl">
@@ -127,7 +129,7 @@ const Membership = () => {
               // PROTOCOL_BENEFITS: ACTIVATED
             </p>
 
-            <section className="grid grid-cols-2 gap-6 lg:grid-cols-4 max-w-7xl mx-auto px-4">
+            <section className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:grid-cols-4 max-w-7xl mx-auto px-4">
               {[
                 {
                   title: 'Neural Connect',
@@ -220,7 +222,7 @@ const Membership = () => {
         {/* Form & Counter Section */}
         <div className="pb-14" id="waitlist"></div>
         <section className="relative overflow-hidden bg-zinc-950 border border-purple-500/20 rounded-[3rem] text-white px-6 py-12 m-2 lg:px-24 mt-14 shadow-2xl">
-          <div className="absolute inset-0 bg-cover bg-center opacity-30 pointer-events-none bg-[url('/GRX.jpg')]"></div>
+          <div className="absolute inset-0 bg-cover bg-center opacity-30 pointer-events-none bg-[url('/GRX4.avif')]"></div>
 
           <h2 className="relative z-10 text-3xl md:text-4xl font-black text-center mb-12 uppercase italic">
             Synchronize with{' '}
@@ -328,7 +330,7 @@ const Membership = () => {
                     ></textarea>
                   </div>
 
-                  <button className="md:col-span-2 bg-purple-600 font-black uppercase tracking-widest py-4 rounded-2xl hover:bg-purple-500 transition-all">
+                  <button className="md:col-span-2 text-[10px] bg-purple-600 font-black uppercase tracking-widest py-4 rounded-2xl hover:bg-purple-500 transition-all">
                     Transmit Application
                   </button>
                 </form>
@@ -345,7 +347,7 @@ const Membership = () => {
             >
               {/* Bloque 1: Annual Quota */}
               <div
-                className={`relative group text-[60px] font-bold bg-white/5 backdrop-blur-md rounded-[2rem] p-8 text-center border border-white/10 transition-all duration-300 mb-0 
+                className={`relative group text-[40px] md:text-[60px] font-bold bg-white/5 backdrop-blur-md rounded-[2rem] p-8 text-center border border-white/10 transition-all duration-300 mb-0 
     ${
       isFormVisible
         ? 'lg:animate-diagonal digital-blur'
@@ -362,7 +364,7 @@ const Membership = () => {
 
               {/* Bloque 2: Neural Entities */}
               <div
-                className={`relative group text-[60px] font-bold font-euclid bg-white/5 backdrop-blur-md rounded-[2rem] p-8 text-center border border-white/10 transition-all duration-300 
+                className={`relative group text-[40px] md:text-[60px] font-bold bg-white/5 backdrop-blur-md rounded-[2rem] p-8 text-center border border-white/10 transition-all transition-all duration-300 
     ${
       isFormVisible
         ? 'lg:animate-diagonal80k digital-blur'

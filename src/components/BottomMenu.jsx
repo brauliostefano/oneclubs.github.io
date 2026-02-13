@@ -4,7 +4,7 @@ import { Headphones, Zap, Cpu, Globe, Activity, Home } from 'lucide-react';
 
 const MobileNav = () => {
   const navItems = [
-    { icon: <Home size={20} />, label: 'Home', href: '/' },
+    { icon: <Home size={20} />, label: 'Home', href: '#home' },
     { icon: <Headphones size={20} />, label: 'Music', href: '#news' },
     { icon: <Zap size={20} />, label: 'Energy', href: '#events' },
     { icon: <Cpu size={20} />, label: 'Protocol', href: '#membership' },

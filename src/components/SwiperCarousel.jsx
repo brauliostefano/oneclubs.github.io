@@ -10,98 +10,69 @@ import 'swiper/css/effect-fade';
 const Carousel = () => {
   const galleries = [
     {
-      mainImage: 'GRX.jpg',
-
-      title: 'Blackbox 1.2',
-
-      location: 'Rijksmuseum, Amsterdam, Netherlands',
-
+      mainImage: 'ADE.webp',
+      title: 'Amsterdam Dance Event',
+      location: 'Amsterdam, Netherlands | Rijksmuseum',
       description:
-        'Explore the mysteries of art in a setting that intertwines history with modernity.',
-
-      thumbnails: ['GRX1.jpg', 'GRX2.jpg', 'GRX3.avif', 'GRX4.avif'],
-
-      icon1Url: '/',
-
-      icon2Url: 'google.com/1',
+        'The heartbeat of the global EDM industry, where digital pioneers and sonic legends define the future of sound.',
+      iconUrl: 'https://www.amsterdam-dance-event.nl/en/live/',
     },
-
     {
       mainImage: 'GRX1.jpg',
-
       title: 'Northern Lights',
-
-      location: 'Tromsø, Troms, Norway',
-
+      location: 'Tromsø, Norway | Arctic Cathedral',
       description:
-        'A night under the Northern Lights, where art meets the arctic.',
-
-      thumbnails: ['GRX2.jpg', 'GRX1.jpg', 'GRX3.avif', 'GRX4.avif'],
-
-      icon1Url: '/',
-
-      icon2Url: 'google.com/2',
+        'A transcendental arctic experience syncing the rhythm of the Aurora with avant garde electronic textures.',
+      iconUrl: 'https://www.tromsoworld.com/',
     },
-
     {
-      mainImage: 'GRX2.jpg',
-      title: 'Lollapalooza',
-      location: 'Hipódromo San Isidro, Buenos Aires, Argentina',
+      mainImage: 'Ultra.webp',
+      title: 'Ultra Buenos Aires',
+      location: 'Buenos Aires, Argentina | Hipódromo San Isidro',
       description:
-        "A night of pure electronic dance music energy in Argentina's most iconic monumental.",
-      thumbnails: ['GRX2.jpg', 'GRX1.jpg', 'GRX3.avif', 'GRX4.avif'],
-      icon1Url: '/',
-      icon2Url: 'google.com/3',
+        "High intensity sonic landscapes where the pulse of South America meets the world's DJ elite.",
+      iconUrl: 'https://ultrabuenosaires.com/es/',
     },
-
     {
-      mainImage: 'GRX3.avif',
-      title: "Artisan's Dream",
-      location: 'STMPD RCDRS, Barcelona, Spain',
+      mainImage: 'mrtngrrx.jpg',
+      title: 'Martin Garrix Americas Tour',
+      location: 'Santiago, Chile | Movistar Arena',
       description:
-        'Witness the fusion of architecture and art in a city that celebrates creativity.',
-      thumbnails: ['GRX2.jpg', 'GRX1.jpg', 'GRX3.avif', 'GRX4.avif'],
-
-      icon1Url: '/',
-      icon2Url: 'google.com/4',
+        'A high octane visual and melodic journey through the Americas, redefining the stadium experience.',
+      iconUrl: 'https://martingarrix.com/tour/',
     },
-
     {
-      mainImage: 'GRX4.avif',
-      title: 'Gondola Nights',
-      location: 'Sena River, Paris, France',
+      mainImage: 'edcmx.jpg',
+      title: 'Electric Daisy Carnival',
+      location: 'CDMX, México | Autódromo Hermanos Rodríguez',
       description:
-        'An exclusive night by the canals, where romance and history blend beautifully.',
-      thumbnails: ['GRX2.jpg', 'GRX1.jpg', 'GRX3.avif', 'GRX4.avif'],
-      icon1Url: '/',
-      icon2Url: 'google.com/5',
+        'A neon soaked carnival under the Electric Sky, celebrating the intersection of high-tech art and pure joy.',
+      iconUrl: 'https://mexico.electricdaisycarnival.com/',
     },
-
     {
-      mainImage: 'GRX5.jpg',
-      title: 'Cristo Redentor',
-      location: 'Saó Paolo, Brazil',
+      mainImage: 'primaverasound.webp',
+      title: 'Primavera Sound',
+      location: 'São Paulo, Brazil | Autódromo De Interlagos',
       description:
-        'A night of luxury and elegance in the tallest building in the world.',
+        'An eclectic sonic ritual bridging alternative roots with the vanguard of global electronic music.',
       thumbnails: ['GRX2.jpg', 'GRX1.jpg', 'GRX3.avif', 'GRX4.avif'],
-      icon1Url: '/',
-      icon2Url: 'google.com/6',
+      iconUrl: 'https://www.primaverasound.com/es',
     },
-
     {
       mainImage: 'GRX6.jpg',
       title: 'Tomorrowland',
-      location: 'Boom, Belgium',
+      location: 'Boom, Belgium | De Schorre',
       description:
-        'Experience winter like never before in a magical setting by Lake Geneva.',
-      thumbnails: ['GRX2.jpg', 'GRX1.jpg', 'GRX3.avif', 'GRX4.avif'],
-      icon1Url: '/',
-      icon2Url: 'google.com/7',
+        'A mythical sanctuary of sound and storytelling, uniting the global tribe in a world of pure imagination.',
+      iconUrl: 'https://www.tomorrowland.com',
     },
   ];
 
   return (
-    <div className="w-full p-4 lg:p-0 lg:w-[85%] mt-20 lg:mt-32 mx-auto">
+    <div
+      className="w-full p-4 lg:p-0 lg:w-[85%] mt-20 lg:mt-32 mx-auto"
+      id="home"
+    >
       {/* Desktop / Tablet View */}
       <div className="hidden md:block">
         <Swiper
@@ -147,14 +118,8 @@ const Carousel = () => {
                 {/* Botones de Acción Estilo Glass-Crypto */}
                 <div className="absolute bottom-12 right-12 flex gap-4">
                   <a
-                    href={gallery.icon1Url}
-                    className="group/btn relative overflow-hidden flex justify-center items-center bg-white/5 hover:bg-purple-600/20 backdrop-blur-xl border border-white/10 transition-all duration-300 rounded-2xl w-20 h-20 shadow-2xl"
-                  >
-                    <div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover/btn:opacity-100 transition-opacity" />
-                    <Star className="w-8 h-8 text-white group-hover/btn:text-purple-400 transition-colors" />
-                  </a>
-                  <a
-                    href={gallery.icon2Url}
+                    href={gallery.iconUrl}
+                    target="_blank"
                     className="group/btn relative overflow-hidden flex justify-center items-center bg-white/5 hover:bg-purple-600/20 backdrop-blur-xl border border-white/10 transition-all duration-300 rounded-2xl w-20 h-20 shadow-2xl"
                   >
                     <div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover/btn:opacity-100 transition-opacity" />
@@ -186,8 +151,7 @@ const MobileGallery = ({
   title,
   location,
   description,
-  icon1Url,
-  icon2Url,
+  iconUrl,
 }) => {
   return (
     <div className="flex flex-col gap-4">
@@ -203,17 +167,9 @@ const MobileGallery = ({
 
         {/* Contenedor de Iconos Mobile (Esquina superior derecha) */}
         <div className="absolute top-6 right-6 flex flex-col gap-4 z-20">
-          {/* Botón 1: Favorito/Star */}
-          <a
-            href={icon1Url}
-            className="p-4 bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl active:scale-90 transition-transform shadow-lg"
-          >
-            <Star className="w-6 h-6 text-white" />
-          </a>
-
           {/* Botón 2: Link Externo */}
           <a
-            href={icon2Url}
+            href={iconUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl active:scale-90 transition-transform shadow-lg"
