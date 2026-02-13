@@ -5,14 +5,14 @@ import { Play, Calendar, MapPin, ArrowRight, Disc } from 'lucide-react';
 const archiveData = [
   {
     id: 1,
-    category: 'STMPD_LOGS',
-    title: 'The Rise of the Alpha Stage',
-    artist: 'Martin Garrix',
-    event: 'Ultra Miami 2016',
+    category: 'LEGACY_FILES',
+    title: '36 Years of Smooth Criminal',
+    artist: 'Michael Jackson',
+    event: 'Dangerous World Tour',
     excerpt:
-      'Análisis del set que cambió la narrativa del Big Room al Future Bass.',
-    videoUrl: 'https://www.youtube.com/embed/eXJ_8vO8v_8',
-    slug: 'ultra-2016-analysis',
+      'Analyzing the 36-year legacy of the "Anti-Gravity Lean." A technical breakdown of the patented stage mechanics and the cinematography that redefined the synchronization between live performance and visual storytelling.',
+    videoUrl: 'https://www.youtube.com/embed/h_D3VFfhvs4', // Martin Garrix URL - Sugiero cambiar por MJ luego
+    slug: 'smooth-criminal-36-anniversary',
   },
   {
     id: 2,
@@ -21,18 +21,18 @@ const archiveData = [
     artist: 'Daft Punk',
     event: 'Bercy, Paris',
     excerpt:
-      'Cómo la pirámide LED definió el estándar de las producciones actuales.',
-    videoUrl: 'https://www.youtube.com/embed/j3H_7IdbcXk',
+      "Exploring the Big Bang of modern visual production. A deep dive into how Daft Punk's LED pyramid integrated hardware and software into a synchronization protocol that still defines the industry standard today.",
+    videoUrl: 'https://www.youtube.com/embed/B38CY-4Rd6s',
     slug: 'daft-punk-alive-2007',
   },
   {
     id: 3,
     category: 'LOCAL_HISTORY',
-    title: 'The First Pulse in BA',
+    title: 'The First Pulse of Ultra Buenos Aires',
     artist: 'Various Artists',
     event: 'Ultra Buenos Aires',
     excerpt:
-      'Crónica técnica del debut de la franquicia en el suelo argentino.',
+      'Retrieving the signal from Argentina’s first massive electronic synchronization. A technical report on the logistical deployment that successfully brought Ultra’s global production standard to the San Isidro Hippodrome.',
     videoUrl: 'https://www.youtube.com/embed/cWJV0DgMqEA',
     slug: 'ultra-ba-origins',
   },
