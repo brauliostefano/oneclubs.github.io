@@ -22,13 +22,13 @@ const Navbar = () => {
         className={`
                 relative transition-all duration-500 ease-in-out
                 flex items-center justify-between
-                backdrop-blur-xl bg-zinc-900/60 border-2 border-gray-900
+                backdrop-blur-xl bg-zinc-900/60 border-[1.5px] border-purple-400/10
                 shadow-[0_8px_32px_0_rgba(0,0,0,0.8)]
                 rounded-[2rem] px-6 py-3
                 ${
                   menuOpen
-                    ? 'w-full max-w-[350px] flex-col rounded-[2.5rem] py-8'
-                    : 'w-full max-w-[1120px] flex-row'
+                    ? 'w-full max-w-[350px] flex-col lg:rounded-[2.5rem] py-8'
+                    : 'w-full lg:max-w-[1220px] max-w-[600px] rounded-2xl flex-row'
                 }
             `}
       >
@@ -44,7 +44,7 @@ const Navbar = () => {
           </a>
 
           {/* Botón Mobile */}
-          <button
+          {/* <button
             onClick={toggleMenu}
             className="md:hidden p-2 text-white/70 hover:text-white transition-colors"
           >
@@ -53,7 +53,7 @@ const Navbar = () => {
             ) : (
               <Bars3Icon className="w-7 h-7" />
             )}
-          </button>
+          </button> */}
         </div>
 
         {/* Links de Navegación */}

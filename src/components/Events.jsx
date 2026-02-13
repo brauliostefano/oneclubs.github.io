@@ -4,19 +4,21 @@ import { Play, MapPin, User, Youtube, Quote, Radio } from 'lucide-react';
 
 // Datos simulados del último video subido a YouTube
 const latestVod = {
-  title: '¿Vendiste la compu para venir? | La Previa de Martin Garrix',
+  title: 'DTmF, presiones, adicción al trabajar, actuar y su mejor música',
   location: 'Movistar Arena, Buenos Aires',
   date: '12.02.26',
   agent: 'Stefano', // Vos como el reportero de campo
   // Reemplaza esto con el ID real de tu video de YouTube (lo que va después de "v=")
-  youtubeId: 'cWJV0DgMqEA',
-  highlightQuote:
-    '"Amigo, no duermo hace 48 horas, ¡solo quiero que suene el drop!"',
+  youtubeId: 'V1UOmXQF188',
+  highlightQuote: '"Together we are america"',
 };
 
 const VoxPopuli = () => {
   return (
-    <section className="p-4 lg:px-[80px] pt-11 mb-24 max-w-screen-xl mx-auto font-sans">
+    <section
+      className="p-4 lg:px-[80px] pt-24 max-w-screen-xl mx-auto font-sans"
+      id="vox"
+    >
       {/* Header de la Sección */}
       <div className="flex flex-col mb-12">
         <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter uppercase italic">
@@ -97,7 +99,6 @@ const VoxPopuli = () => {
               {latestVod.highlightQuote}
             </p>
           </div>
-
           {/* Botón CTA a YouTube */}
           <a
             href={`https://www.youtube.com/watch?v=${latestVod.youtubeId}`}

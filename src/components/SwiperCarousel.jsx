@@ -18,11 +18,19 @@ const Carousel = () => {
       iconUrl: 'https://www.amsterdam-dance-event.nl/en/live/',
     },
     {
-      mainImage: 'GRX1.jpg',
-      title: 'Northern Lights',
-      location: 'Tromsø, Norway | Arctic Cathedral',
+      mainImage: 'badbunny.webp',
+      title: 'Bad Bunny Buenos Aires',
+      location: 'Buenos Aires, Argentina | Estadio Monumental',
       description:
-        'A transcendental arctic experience syncing the rhythm of the Aurora with avant garde electronic textures.',
+        'Ganador de tres GRAMMY® y once Latin GRAMMY®, Bad Bunny anuncia oficialmente su “DeBÍ TiRAR MáS FOToS World Tour”',
+      iconUrl: 'https://www.amsterdam-dance-event.nl/en/live/',
+    },
+    {
+      mainImage: 'utopia.png',
+      title: 'Utopia Festival',
+      location: 'Oslo, Norway | Bjergstedparken',
+      description:
+        'Festivalen befinner seg i vakre Bjergstedparken, med Kuppelhallen som et monument midt i festivalområdet.',
       iconUrl: 'https://www.tromsoworld.com/',
     },
     {
@@ -70,7 +78,7 @@ const Carousel = () => {
 
   return (
     <div
-      className="w-full p-4 lg:p-0 lg:w-[85%] mt-20 lg:mt-32 mx-auto"
+      className="w-full p-4 lg:p-0 lg:w-[85%] mt-20 lg:mt-9 mx-auto"
       id="home"
     >
       {/* Desktop / Tablet View */}
@@ -155,7 +163,7 @@ const MobileGallery = ({
 }) => {
   return (
     <div className="flex flex-col gap-4">
-      <div className="relative w-full h-[550px] rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl">
+      <div className="relative w-full h-[550px] lg:rounded-[2.5rem] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
         <img
           src={mainImage}
           alt={title}

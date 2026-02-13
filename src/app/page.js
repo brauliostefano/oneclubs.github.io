@@ -1,25 +1,26 @@
 import Header from '@/components/Header';
 import SwiperCarousel from '@/components/SwiperCarousel';
+import Plur from '@/components/plur';
 import BottomMenu from '@/components/BottomMenu';
-import Membership from '@/components/Membership';
+import Hero from '@/components/Hero';
 import News from '@/components/News';
 import MusicArchive from '@/components/MusicArchive';
 import Events from '@/components/Events';
 import LateralBar from '@/components/LateralBar';
 import Footer from '@/components/Footer';
 
-export default function RootLayout({ children }) {
+export default function RootLayout() {
   return (
     <main className="main">
-      <Header />
+      {/* <Header /> */}
       <SwiperCarousel />
       <LateralBar />
-      <Membership />
+      <Hero />
+      <Plur />
       <BottomMenu />
       <News />
       <Events />
       <MusicArchive />
-      {children}
       <Footer />
     </main>
   );

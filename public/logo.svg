@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" fill="none">
+  <defs>
+    <linearGradient id="nexus-grad-horiz" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d946ef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(10, 10) scale(0.6)">
+     <path d="M25,20 L25,80" stroke="url(#nexus-grad-horiz)" stroke-width="6" stroke-linecap="round" opacity="0.7" />
+     <path d="M75,20 L75,80" stroke="url(#nexus-grad-horiz)" stroke-width="6" stroke-linecap="round" opacity="0.7" />
+     <path d="M25,30 L40,50 L60,50 L75,70" stroke="url(#nexus-grad-horiz)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+     <circle cx="50" cy="50" r="7" fill="url(#nexus-grad-horiz)" stroke="white" stroke-width="2" />
+  </g>
+
+  <text x="85" y="52" font-family="sans-serif" font-weight="900" font-size="40" letter-spacing="-1" fill="white" style="text-transform: uppercase; font-style: italic;">
+    NEXUS
+  </text>
+  <text x="225" y="52" font-family="sans-serif" font-weight="900" font-size="40" letter-spacing="-1" fill="url(#nexus-grad-horiz)" style="text-transform: uppercase; font-style: italic;">
+    PROTOCOL
+  </text>
+</svg>

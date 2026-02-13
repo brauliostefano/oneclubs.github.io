@@ -48,7 +48,10 @@ const ArchiveStream = () => {
       : archiveData.filter((item) => item.category === activeTab);
 
   return (
-    <section className="p-4 lg:px-[80px] pt-11 mb-24 max-w-screen-xl mx-auto font-sans">
+    <section
+      className="p-4 lg:px-[80px] lg:py-28 pt-24 max-w-screen-xl mx-auto font-sans"
+      id="archive"
+    >
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
         <div>
           <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter uppercase italic">

@@ -31,7 +31,10 @@ const Pulse = () => {
   ];
 
   return (
-    <section className="p-4 lg:px-[80px] pt-11 max-w-screen-xl mx-auto font-sans">
+    <section
+      className="p-4 lg:px-[80px] pt-24 max-w-screen-xl mx-auto font-sans"
+      id="pulse"
+    >
       <div className="flex flex-col items-center mb-12">
         <h2 className="text-4xl md:text-5xl font-black text-white text-center tracking-tighter uppercase italic">
           NEXUS{' '}
