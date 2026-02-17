@@ -3,12 +3,10 @@ import { Headphones, Zap, Cpu, Share2, Globe } from 'lucide-react';
 
 const Footer = () => {
   return (
-    /* Restauramos: w-screen, lg:w-full, mb-20 y lg:pl-24 */
     <footer className="relative bg-zinc-950 border-t border-white/5 text-white py-9 mb-20 w-screen lg:w-full lg:m-0 lg:pt-11 lg:pl-24 overflow-hidden">
       <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-purple-600/5 blur-[120px] pointer-events-none"></div>
 
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row md:justify-between items-center md:items-start gap-12 relative z-10">
-        {/* Sección Izquierda: Branding & Nodes */}
         <div className="text-center md:text-left flex flex-col gap-6">
           <div>
             <h2 className="text-3xl tracking-tighter italic uppercase font-black">
